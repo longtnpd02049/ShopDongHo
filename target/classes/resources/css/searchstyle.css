@@ -1,0 +1,648 @@
+@charset "utf-8";
+* {
+	margin:0;
+	padding:0;
+	}
+body{
+	background:url(../images/body-bg.jpg) repeat left top;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	line-height:17px;
+	color:#9f9f9f;
+	padding:25px 0 50px 0;
+	} 
+a{
+	text-decoration: none;
+}
+header{background-color:black;}
+.buttonpage {
+    background-color: white;
+    color: black;
+    border: 1px solid #4CAF50;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width:50px;
+    height:30px;
+}
+.page{
+	text-align:center;
+	font-size:20px;
+	position: absolute;
+    top: 1430px;
+    left: 950px;
+}
+.page li{
+	list-style:none;
+	color:white;
+	margin:10px;
+	float:left;
+}
+.buttonpage:hover {
+    box-shadow: 0 0 10px white;
+}
+.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+.active{
+	color:green !important;
+}
+.container{
+	margin:0 auto;
+	max-width:1400px;
+	height:1560px;
+	background-color:black;
+	box-shadow:0 0 15px white;
+}
+/*Bắt đầu menu ngang*/
+.container .menu-ngang{
+	float:left;
+	width:100%;
+	border-top: 1px groove white;
+	border-bottom:1px groove white;
+}
+.container .menu-ngang ul{
+	padding:7px 0 0 10px;
+	list-style-type:none;
+	margin:10;
+}
+.container .menu-ngang ul li{
+	float:left;
+}
+.container .menu-ngang ul li:first-child a{
+	background:none;
+	padding-left:0;
+}
+.container .menu-ngang ul li a{
+	color:#fefefe;
+	font-size:14px;
+	line-height:40px;
+	text-decoration:none;
+	background:url(../images/menu-line.gif) no-repeat left 7px;
+	padding:0px 20px 0px 20px;
+	overflow:hidden;
+	display:block;
+}
+.container .menu-ngang ul li a:hover,
+.container .menu-ngang ul li.selected a{
+	color:#FF69B4;
+}
+.rmenu-ngang{
+	float:right;
+	padding-right:10px;
+}
+/*Kết thúc menu ngang*/
+
+/*Bắt đầu search css*/
+#search-site {
+    float: right;
+    width: 230px;
+    height: 35px;
+    background: #fff;
+    position: relative;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+}
+.topinput {
+    float: left;
+    width: 175px;
+    margin-left: 8px;
+    padding-top: 3px;
+    border: 0;
+    position: relative;
+    background: #fff;
+    height: 30px;
+    text-indent: 10px;
+    font-size: 13px;
+	font: 14px/18px Helvetica,Arial,'DejaVu Sans','Liberation Sans',Freesans,sans-serif;
+    color: #333;
+    outline: none;
+    zoom: 1;
+}
+.btntop {
+    float: right;
+    width: 40px;
+    height: 35px;
+    border: 0;
+    background: none;
+}
+.icontgdd-topsearch {
+    background-position: -160px 0;
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin: 7px auto 0;
+	background-image: url(../images/icondesktop@1x.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+}
+
+/*Kết thúc search css*/
+
+/*Bắt đầu center-side*/
+section .center-side{
+	padding-left:20px;
+	float:left;
+	width:80%;
+	height:780px;
+	}
+.text-hangmoinhat{
+	background: #282828;
+	padding:5px;
+	width:155px;
+	height:25px;
+	border-radius:5px;
+	text-decoration:none;
+	float: left;
+}
+.text-hangmoinhat>a{
+	font-size:16px;
+	margin:10px;
+	color:white;
+	text-transform: uppercase;
+	line-height:30px;
+}
+
+.text-timkiem{
+	background: #282828;
+	padding:5px;
+	width:185px;
+	height:25px;
+	border-radius:5px;
+	text-decoration:none;
+	float: left;
+}
+.text-timkiem>a{
+	font-size:16px;
+	margin:10px;
+	color:white;
+	text-transform: uppercase;
+	line-height:30px;
+}
+.text-hangbanchay{
+	background: #282828;
+	padding:5px;
+	width:155px;
+	height:25px;
+	border-radius:5px;
+	text-decoration:none;
+	float:left;
+}
+.text-hangbanchay>a{
+	font-size:16px;
+	margin:10px;
+	color:white;
+	text-transform: uppercase;
+	line-height:30px;
+}
+	/*Bắt đầu hiển thị sản phẩm*/
+	.hangmoinhat{
+		width:1070px;
+		height:auto;
+		padding:10px;
+		line-height: 1;
+		color: white;
+		font-size: 14px;
+		font-family: 'Open Sans', "HelveticaNeue", "Helvetica Neue", Helvetica,
+			Arial, sans-serif;
+		line-height: 18px;
+		float:left;
+		padding-bottom: 30px;
+	}
+	.hangmoinhat a {
+		display: table-cell;
+		width: 205px;
+		height: 205px;
+		padding: 5px;
+		overflow: hidden;
+		vertical-align: bottom;
+	}
+	.hangbanchay{
+		width:1070px;
+		height:auto;
+		padding:10px;
+		line-height: 1;
+		color: white;
+		font-size: 14px;
+		font-family: 'Open Sans', "HelveticaNeue", "Helvetica Neue", Helvetica,
+			Arial, sans-serif;
+		line-height: 18px;
+		float:left;
+	}
+	.hangbanchay a {
+		display: table-cell;
+		width: 205px;
+		height: 205px;
+		padding: 5px;
+		overflow: hidden;
+		vertical-align: bottom;
+	}
+	.sanpham{
+		overflow: hidden;
+		float: left;
+		margin: 11px;
+		min-width: 245px;
+		min-height:265px;
+		position: relative;
+		background:white;
+	}
+	.sanpham a img {
+		width: 140px;
+		height: 160px;
+		margin: 5px auto 10px;
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 10px;
+		display:block;
+	}
+	
+	.sanpham a {
+		display: table-cell;
+		width: 205px;
+		height: 235px;
+		padding: 5px;
+		overflow: hidden;
+		vertical-align: bottom;
+	}
+
+	.sanpham a h3 {
+		font-size: 14px;
+		font-weight: normal;
+		color: #333;
+		line-height: 14px;
+		-webkit-transition: all 300ms ease 100ms;
+		-moz-transition: all 300ms ease 100ms;
+		transition: all 300ms ease 100ms;
+		display: block;
+	}
+	.sanpham label.tragop0phantram{
+		position: absolute;
+		bottom: 0px;
+		left: 0px;
+		font-size: 11px;
+		color: #fff;
+		font-weight: 600;
+		background: #f28902;
+		border-radius: 2px;
+		padding: 0 5px;
+		height: 18px;
+	}
+	.sanpham label.giareonline {
+		position: absolute;
+		bottom: 0px;
+		left: 0px;
+		font-size: 11px;
+		color: #fff;
+		font-weight: 600;
+		background: #3fb846;
+		border-radius: 2px;
+		padding: 0 5px;
+		height: 18px;
+	}
+	.sanpham label.new {
+		background: #1191f8;
+		position: absolute;
+		bottom: 0px;
+		left: 0px;
+		font-size: 11px;
+		color: #fff;
+		font-weight: 600;
+		border-radius: 2px;
+		padding: 0 5px;
+		height: 18px;
+	}
+	.sanpham a h4 {
+		color: red;
+		font-size: 14px;
+		font-weight: bold;
+		-webkit-transition: all 300ms ease 100ms;
+		-moz-transition: all 300ms ease 100ms;
+		transition: all 300ms ease 100ms;
+		display: table-cell;
+		line-height: inherit;
+		display: block;
+	}
+	.thongtinsp{
+		width:230px;
+		height:auto;
+		margin: 0 auto;
+		text-align:center;
+	}
+	.thongtinsp p{
+		text-align:left;
+	}
+	.sanpham a h5 {
+		color: #888;
+		padding-left: 8px;
+		font-size: 12px;
+		font-weight: normal;
+		text-decoration: line-through;
+		line-height: 18px;
+		display: table-cell;
+		display: block;
+	}
+
+	.sanpham .textkm {
+		display: table-row;
+		vertical-align: bottom;
+		font-size: 11px;
+		color: #999;
+		height: 10px;
+		line-height: 10px;
+		display: block;
+	}
+
+	.sanpham .textkm strong {
+		margin-right: 5px;
+		color: red;
+		font-weight: 700;
+	}
+	.sanpham .info {
+		display: block;
+		overflow: hidden;
+		-ms-opacity: 0;
+		opacity: 0;
+		background: rgba(0, 0, 0, 0);
+		height: 160px;
+		width: 100%;
+		padding: 10px;
+		font-size: 12px;
+		color: #fff;
+		line-height: 16px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		-webkit-transition: all .5s ease;
+		-moz-transition: all .5s ease;
+		-o-transition: all .5s ease;
+		-ms-transition: all .5s ease;
+		transition: all .5s ease;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+		filter: alpha(opacity = 0);
+	}
+
+	.sanpham:hover .info {
+		background: rgba(0, 0, 0, .85);
+		-ms-opacity: 1;
+		opacity: 1;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+		filter: alpha(opacity = 100);
+		-khtml-opacity: 1;
+		cursor: pointer;
+		box-shadow: 0 0 10px black;
+	}
+	.sanpham:hover{
+		box-shadow: 0 0 20px white;
+		cursor:pointer;
+	}
+	.sanpham .info span {
+		color: #fff;
+		display: block;
+		padding: 2px 6px;
+	}
+	/*Kết thúc hiển thị sản phẩm*/
+/*Kết thúc center-side*/
+
+
+
+/*Bắt đầu end-side*/
+aside #end-side{
+	margin:0 auto;
+	width:1400px;
+	overflow:hidden;
+	background:url(../images/body-bg.jpg) repeat left top;
+}
+aside #end-side .inner{
+	padding:25px 0 27px 0;
+}
+aside #end-side .aside-nav .list1{ padding:7px 198px 12px 28px; margin:12px 0 0 0; background:url(../images/aside-line.png) no-repeat right top; float:left;}
+aside #end-side .aside-nav .list1.alt{ padding:7px 198px 12px 121px;}
+aside #end-side .aside-nav .list1.alt.last{ padding:7px 57px 12px 121px; background:none;}
+aside #end-side .aside-nav .list1 li{list-style-type:none;}
+aside #end-side .aside-nav .list1 li a{ font-size:11px; line-height:22px; color:#FF69B4; text-decoration:none; background:url(../images/marker1.gif) no-repeat left 4px; padding-left:13px;}
+aside #end-side .aside-nav .list1 li a:hover{ color:#fff;}
+
+#bannerFive {
+        padding: 0em;
+		width:auto;
+        }
+.banner-fright { float:right;}
+/*Kết thúc end-side*/
+
+/*Back on top*/
+#back-top {
+    display: none;
+    z-index: 99;
+}
+#back-top span:before {
+    cursor: pointer;
+    background: #fdd504;
+    width: 40px;
+    position: fixed;
+    right: 20px;
+    bottom: 45px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    -transition: all .2s linear;
+    color: #000;
+    content: "▲";
+    opacity: .7;
+    z-index: 8;
+}
+#back-top span:before {
+    cursor: pointer;
+    background: #fdd504;
+    width: 40px;
+    position: fixed;
+    right: 20px;
+    bottom: 45px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    -transition: all .2s linear;
+    color: #000;
+    content: "▲";
+    opacity: 0.7;
+    z-index: 8;
+    border-radius: 5px;
+}
+.none {
+    display: none;
+}
+/*End back ontop*/
+
+/*Bắt đầu menu dọc*/
+aside .left-side{
+	float:left;
+	width:18%;
+	height:950px;
+	}
+aside .left-side .menu-left{
+	float:left;
+	width:250px;
+	border-top-left-radius:5px 10px;
+}
+aside .left-side .menu-left2 .menu-tieude{
+	width:100%;
+	height:30px;
+	background-color:black;
+	text-align:center;
+	padding-top:10px;
+	box-shadow: 0 0 3px white;
+}
+aside .left-side .menu-left2 .menu-tieude span{
+	margin: 20px;
+	color:white;
+	font-size:18px;
+	}
+aside .left-side .menu-left2 .menu-content{
+	border: 1px groove white;
+}
+.left-side > .menu-left >.menu-left2 ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  line-height: 1;
+  z-index:2;
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.left-side > .menu-left >.menu-left2 ul li {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.left-side > .menu-left >.menu-left2 ul li:hover{
+	cursor: pointer;
+}
+.left-side > .menu-left >.menu-left2 ul li a {
+  display: block;
+  position: relative;
+  margin: 0;
+  border-top: 1px dotted #3a3a3a;
+  border-bottom: 1px dotted #1b1b1b;
+  padding: 11px 20px;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #d8d8d8;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: 0 1px 1px #000;
+  font-size: 13px;
+  font-weight: 300;
+  background: #282828;
+}
+
+.left-side > .menu-left >.menu-left2 ul li:first-child > a {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-top: 0;
+}
+
+.left-side > .menu-left >.menu-left2 ul li:last-child > a {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom: 0;
+}
+
+.left-side > .menu-left >.menu-left2 ul li > a:hover,
+.left-side > .menu-left >.menu-left2 ul li:hover > a {
+  color: #ffffff;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+  background: #54cdf1;
+  background: -webkit-linear-gradient(#72d4f2, #54cdf1);
+  background: -moz-linear-gradient(#72d4f2, #54cdf1);
+  background: linear-gradient(gray,black);
+  border-color: transparent;
+}
+
+.left-side > .menu-left >.menu-left2 ul .has-sub > a::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  right: 10px;
+  width: 0px;
+  height: 0px;
+  border: 4px solid transparent;
+  border-left: 4px solid #d8d8d8;
+}
+
+.left-side > .menu-left >.menu-left2 ul .has-sub > a::before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  right: 10px;
+  width: 0px;
+  height: 0px;
+  border: 4px solid transparent;
+  border-left: 4px solid #000;
+}
+
+.left-side > .menu-left >.menu-left2 ul li > a:hover::after,
+.left-side > .menu-left >.menu-left2 ul li:hover > a::after {
+  border-left: 4px solid #ffffff;
+}
+.left-side > .menu-left >.menu-left2 ul li > a:hover::before,
+.left-side > .menu-left >.menu-left2 ul li:hover > a::before {
+  border-left: 4px solid rgba(0, 0, 0, 0.3);
+}
+.left-side > .menu-left >.menu-left2 ul ul {
+  position: absolute;
+  left: 100%;
+  top: -9999px;
+  padding-left: 5px;
+  opacity: 0;
+  width: 260px;
+  -webkit-transition: opacity 0.3s ease-in;
+  -moz-transition: opacity 0.3s ease-in;
+  transition: opacity 0.3s ease-in;
+}
+.left-side > .menu-left >.menu-left2 ul li:hover > ul {
+  top: 0px;
+  opacity: 1;
+}
+/*Kết thúc menu dọc*/
+
+/*Bắt đầu footer*/
+footer{
+	clear:both;
+	margin:0 auto;
+	max-width:1400px;
+	width:100%;
+	box-shadow:0 0 15px white;
+	background-color:black;
+	}
+.footer span{
+	padding-left:20px;
+	font-size:14px;
+	font-variant:small-caps;
+	line-height:40px;
+	
+	}
+/*Kết thúc footer*/
